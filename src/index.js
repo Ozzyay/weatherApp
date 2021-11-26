@@ -10,9 +10,9 @@ let format = 'f';
 const link = 'http://api.openweathermap.org/data/2.5/weather?q=';
 const apiLink = `&APPID=${APIKey}`;
 const getter = async function (arg) {
+  const response = await fetch(arg, { mode: 'cors' });
+  const data = await response.json();
   try {
-    const response = await fetch(arg, { mode: 'cors' });
-    const data = await response.json();
     const description = data.weather[0].main;
     const city = data.name;
     const { country } = data.sys;
