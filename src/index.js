@@ -7,7 +7,7 @@ let objectifiedWeather = {};
 
 const APIKey = '3f9a5d5974334409e8c763223dca80a0';
 let format = 'f';
-const link = 'http://api.openweathermap.org/data/2.5/weather?q=';
+const link = 'https://api.openweathermap.org/data/2.5/weather?q=';
 const apiLink = `&APPID=${APIKey}`;
 const getter = async function (arg) {
   const response = await fetch(arg, { mode: 'cors' });
