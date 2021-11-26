@@ -1,7 +1,6 @@
 import './style.css';
 import weatherObject from './weatherObject';
 import domUpdates from './domUpdates';
-import { ftoc, ctof } from './weatherConversion';
 
 let objectifiedWeather = {};
 
