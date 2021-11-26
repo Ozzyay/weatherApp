@@ -13,12 +13,12 @@ const domUpdates = (() => {
       tempDiv.innerHTML = Math.ceil(ktoc(weatherObject.temp));
       bigUnit.innerHTML = '°C';
       const feelsNum = Math.ceil(ktoc(weatherObject.feelsLike));
-      feelsDiv.innerHTML = `Feels Like: ${feelsNum}°C`;
+      feelsDiv.innerText = `Feels Like: ${feelsNum}°C`;
     } else {
       tempDiv.innerHTML = Math.ceil(ktof(weatherObject.temp));
       const feelsNum = Math.ceil(ktof(weatherObject.feelsLike));
       feelsDiv.innerHTML = `Feels Like: ${feelsNum}°F`;
-      bigUnit.innerHTML = '°F';
+      bigUnit.innerText = '°F';
     }
     descDiv.innerHTML = `${weatherObject.description}`;
     locDiv.innerHTML = `${weatherObject.city}, ${weatherObject.country}`;
