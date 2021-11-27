@@ -29,6 +29,9 @@ p {
   border: 0;
   color: rgba(255, 255, 255, 0.9);
 }
+::placeholder {
+  color: rgba(255, 255, 255, 0.9);
+}
 .search:focus {
   margin: 0;
   border: 0;
