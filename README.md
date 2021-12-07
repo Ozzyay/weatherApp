@@ -1,15 +1,7 @@
 # 🚀 Welcome to your new awesome project!
 
-This project has been created using **webpack-cli**, you can now run
+Basic Weather fetching app using the Weather API provided by openweathermap.org
 
-```
-npm run build
-```
+Using entirely vanilla JS DOM manipulation methods.
 
-or
-
-```
-yarn build
-```
-
-to bundle your application
+Preview here: https://ozzyay.github.io/weatherApp/dist/
